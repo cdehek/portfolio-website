@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-attachment: fixed;
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-position: 80%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 9999;
+}
+.header-quote h2 {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 25px;
+    color: #0a7555;
+    font-style: italic;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+}
+
+header nav{
+    margin: 7px 0;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a{
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+body {
+    background-image: url(../images/background.png);
+}
+
+
+/* START HERO STYLING*/
+
+.hero {
+    background-attachment: fixed;
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-position: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.hero-cta h2 {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 25px;
+    color: #0a7555;
+    font-style: italic;
+    align-items: center;
+    justify-content: center;
+}
+
+/* START FOOTER STYLING*/
+
+footer{
+    background: grey;
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
