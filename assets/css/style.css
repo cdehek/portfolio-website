@@ -211,19 +211,19 @@ footer{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-footer ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-}
 
 .contact-me {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 25px;
+}
+.contact-me ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 .contact-me ul li {
     display: inline-block;
@@ -244,4 +244,8 @@ footer ul {
         background: rgb(34, 58, 58);
         color: whitesmoke;
         text-shadow: none;
+}
+.contact-me a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
