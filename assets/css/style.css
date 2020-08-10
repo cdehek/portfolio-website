@@ -3,14 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* HEADER STYLING START*/
 header{
+    position: relative;
     background-attachment: fixed;
-    background: darkslategrey;
+    background: #2f4f4f;
     background-size: cover;
     background-position: 80%;
-    position: -webkit-sticky;
-    position: sticky;
     top: 0;
     padding: 20px 35px;
     display: flex;
@@ -18,15 +17,22 @@ header{
     flex-wrap: wrap;
     z-index: 9999;
 }
+header h1 {
+    color: thistle;
+    font-style: oblique;
+    padding: 10px;
+}
+header h1 a {
+    color: thistle;
+}
 .header-quote h2 {
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-size: 25px;
     color: #9cbeb4;
     font-style: italic;
     align-items: center;
     justify-content: center;
-    padding: 7px;
-    opacity: .25;
+    padding: 10px;
+    opacity: .20;
 }
 
 header nav{
@@ -50,13 +56,48 @@ header nav ul li a{
     font-weight: lighter;
     font-size: 1.55vw;
 }
+header nav ul li a:hover {
+    background: rgb(34, 58, 58);
+    color: whitesmoke;
+    text-shadow: none;
+}
+
+/* HEADER STYLING END*/
+#about-me{
+    width:80%;
+    height:330px;
+    background:#ffffff;
+    border-radius:20px;
+    box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+    display: flex;
+    margin: -7%  auto 20px auto;
+    position: relative;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-bottom: 250px;
+}
+.aboutme-title {
+    position: relative;
+    top: 1%;
+    left: 40%;
+    
+}
+#about-me p {
+    position: relative;
+    top: 150px;
+}
+.portrait {
+    height: 250px;
+    width: 250px;
+}
+.self-portrait {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    top: 150px;
+}
 body {
     background-image: url(../images/background.png);
-}
-.body-grid {
-    display: grid;
-    grid-template-columns: 1fr repeat(2, 4fr);
-    grid-template-rows: repeat(5, 1fr) 2fr;
 }
 
 .flex-row{
@@ -64,25 +105,79 @@ body {
 }
 /* START HERO STYLING*/
 
-.hero {
-    background-attachment: fixed;
-    background-image: url("../images/background.png");
-    background-size: cover;
-    background-position: 80%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-}
 
-.hero-cta h2 {
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    font-size: 25px;
-    color: #0a7555;
-    font-style: italic;
+/* CURRENT PROJECTS STYLING */
+.box-container .cp-title {
+    top: 50%;
+}
+.current-projects {
+}
+.box-container{
+    display:flex;
+    justify-content:space-around;
+    margin-bottom: 250px;
+}
+.box-1,.box-2,.box-3{
+    width: 300px;
+    height:320px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow:2px 2px 18px rgba(0,0,0,0.3);
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 4px;
 }
+.heading {
+    position:absolute;
+    width:100%;
+    bottom:62px;
+    text-align:center;
+    font-style: italic;
+    text-shadow: 1px 1px darkslategray;
+    transition: 1s;
+}
+
+.button {
+    position: absolute;
+    bottom: 10px;
+    left: 25%;
+    align-items: center;
+    display: inline-block;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #7aa8b7;
+    border-radius: 6px;
+    outline: none;
+}
+.box-1 span,
+.box-2 span,
+.box-3 span{
+ width:40px;
+ height:40px;
+ border-radius:50%;
+ background-color:#ffffff;
+ display: flex;
+ justify-content: center;
+ align-items:center;
+ font-weight: bold;
+}
+.box-1 {
+    background-image: url(../images/run-buddy-preview.PNG);
+}
+.box-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
 
 /* START FOOTER STYLING*/
 
@@ -97,6 +192,29 @@ footer{
 footer ul {
     list-style: none;
 }
+footer ul li {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
 .contact-me {
-    
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 25px;
+}
+.contact-me ul li {
+    display: inline-block;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 18px;
+    text-align: center;
+}
+
+.contact-me ul li:hover {
+        background: rgb(34, 58, 58);
+        color: whitesmoke;
+        text-shadow: none;
 }
